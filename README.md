@@ -42,3 +42,26 @@ duplicates <- students[duplicated(students), ]
 
 
 Again, there are no duplicates. Considering that there are only one thousand rows, it is probably to expect no errors.
+
+<img width="864" height="546" alt="grafik" src="https://github.com/user-attachments/assets/50528803-4d00-47ce-971a-c21fe836589d" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
