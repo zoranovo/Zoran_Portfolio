@@ -32,6 +32,13 @@ any(students_d<0, na.rm = TRUE)
 
 It shows no negative values. Last thing is to look for duplicates.
 
+First, I want to compare male and female students.  The next graph shows success on a final exam for male and female students.
+
+ggplot(data = students) +
+  geom_bar(mapping = aes(x=final_exam_score, fill=gender)) + 
+  labs(title = "Graph 1", subtitle = "Success of male and female students on final exam")
+
 duplicates <- students[duplicated(students), ]
+
 
 Again, there are no duplicates. Considering that there are only one thousand rows, it is probably to expect no errors.
