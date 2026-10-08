@@ -118,7 +118,7 @@ against 83.9% that don’t. We see here that there is a small difference between
 
 
 
-Finally, we are going to check dependence of student success on having or not a part time job. It is clear from graph 6, that students without part time job are somewhat better achievers,.
+Finally, we are going to check dependence of student success on having or not a part time job. 
 
 ggplot(data = students) +
   geom_bar(mapping = aes(x=final_exam_score, fill=gender)) + facet_wrap(~part_time_job) + 
@@ -126,7 +126,7 @@ ggplot(data = students) +
 
   <img width="849" height="546" alt="grafik" src="https://github.com/user-attachments/assets/466a93bd-ebe2-4550-a9f7-2a6d868a81c1" />
 
-  However, more than two thirds of the students don’t have a part time job, so again we look at the statistics.
+It is clear from graph 6, that students without part time job are somewhat better achievers. However, more than two thirds of the students don’t have a part time job, so again we look at the statistics.
 
 students_pt <- students %>% group_by(part_time_job) %>%
  summarise(finalexamscore=mean(final_exam_score))
